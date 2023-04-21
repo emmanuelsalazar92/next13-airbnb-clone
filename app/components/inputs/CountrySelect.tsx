@@ -34,10 +34,10 @@ const CountrySelect: React.FC<CountrySelectProps> = ({
         formatOptionLabel={(option: any) => (
           <div className="
           flex flex-row items-center gap-3">
-            <div>{option.flag}</div>
-            <div>
+            <div className="text-black ml-1">{option.flag}</div>
+            <div className="text-black ml-1">
               {option.label},
-              <span className="text-neutral-500 ml-1">
+              <span className="text-black ml-1">
                 {option.region}
               </span>
             </div>

@@ -81,7 +81,7 @@ const Modal: React.FC<ModalProps> = ({
           z-50 
           outline-none 
           focus:outline-none
-          bg-neutral-800/70
+          bg-[#AD2A1A]
         "
       >
         <div className="
@@ -117,7 +117,7 @@ const Modal: React.FC<ModalProps> = ({
               flex 
               flex-col 
               w-full 
-              bg-white 
+              bg-[#107896]
               outline-none 
               focus:outline-none
             "

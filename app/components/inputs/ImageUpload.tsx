@@ -44,13 +44,13 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
               border-dashed 
               border-2 
               p-20 
-              border-neutral-300
+              border-white
               flex
               flex-col
               justify-center
               items-center
               gap-4
-              text-neutral-600
+              text-white
             "
           >
             <TbPhotoPlus

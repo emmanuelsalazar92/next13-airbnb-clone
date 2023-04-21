@@ -93,12 +93,12 @@ const LoginModal = () => {
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
       <div className="
-      text-neutral-500 text-center mt-4 font-light">
+      text-white text-center mt-4 font-light">
         <p>First time using Airbnb?
           <span 
             onClick={onToggle} 
             className="
-              text-neutral-800
+              text-white
               cursor-pointer 
               hover:underline
             "

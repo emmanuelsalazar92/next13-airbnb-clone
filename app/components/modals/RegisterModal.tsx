@@ -95,7 +95,7 @@ const RegisterModal= () => {
     <div className="flex flex-col gap-4 mt-3">
       <div 
         className="
-          text-neutral-500 
+          text-white 
           text-center 
           mt-4 
           font-light
@@ -105,7 +105,7 @@ const RegisterModal= () => {
           <span 
             onClick={onToggle} 
             className="
-              text-neutral-800
+              text-white
               cursor-pointer 
               hover:underline
             "

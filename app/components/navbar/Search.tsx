@@ -101,7 +101,7 @@ const Search = () => {
             text-sm 
             pl-6 
             pr-2 
-            text-gray-600 
+            text-[#AD2A1A]
             flex 
             flex-row 
             items-center 
@@ -112,9 +112,9 @@ const Search = () => {
           <div 
             className="
               p-2 
-              bg-rose-500 
+              bg-[#107896]
               rounded-full 
-              text-white
+              text-[#AD2A1A]
             "
           >
             <BiSearch size={18} />

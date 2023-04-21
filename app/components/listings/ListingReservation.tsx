@@ -29,10 +29,10 @@ const ListingReservation: React.FC<
   return ( 
     <div 
       className="
-      bg-white 
+      bg-[#107896]
         rounded-xl 
         border-[1px]
-      border-neutral-200 
+      border-white 
         overflow-hidden
       "
     >
@@ -41,7 +41,7 @@ const ListingReservation: React.FC<
         <div className="text-2xl font-semibold">
           $ {price}
         </div>
-        <div className="font-light text-neutral-600">
+        <div className="font-light text-white">
           night
         </div>
       </div>
