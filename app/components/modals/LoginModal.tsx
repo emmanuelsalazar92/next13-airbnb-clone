@@ -94,7 +94,7 @@ const LoginModal = () => {
     <div className="flex flex-col gap-4 mt-3">
       <div className="
       text-white text-center mt-4 font-light">
-        <p>First time using Airbnb?
+        <p>First time using PerformanceHouse?
           <span 
             onClick={onToggle} 
             className="

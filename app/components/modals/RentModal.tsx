@@ -18,7 +18,6 @@ import Counter from "../inputs/Counter";
 import CategoryInput from '../inputs/CategoryInput';
 import CountrySelect from "../inputs/CountrySelect";
 import { categories } from '../navbar/Categories';
-import ImageUpload from '../inputs/ImageUpload';
 import Input from '../inputs/Input';
 import Heading from '../Heading';
 
@@ -26,9 +25,8 @@ enum STEPS {
   CATEGORY = 0,
   LOCATION = 1,
   INFO = 2,
-  IMAGES = 3,
-  DESCRIPTION = 4,
-  PRICE = 5,
+  DESCRIPTION = 3,
+  PRICE = 4,
 }
 
 const RentModal = () => {
@@ -66,7 +64,6 @@ const RentModal = () => {
   const guestCount = watch('guestCount');
   const roomCount = watch('roomCount');
   const bathroomCount = watch('bathroomCount');
-  const imageSrc = watch('imageSrc');
 
   const Map = useMemo(() => dynamic(() => import('../Map'), { 
     ssr: false 
@@ -206,21 +203,6 @@ const RentModal = () => {
     )
   }
 
-  if (step === STEPS.IMAGES) {
-    bodyContent = (
-      <div className="flex flex-col gap-8">
-        <Heading
-          title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
-        />
-        <ImageUpload
-          onChange={(value) => setCustomValue('imageSrc', value)}
-          value={imageSrc}
-        />
-      </div>
-    )
-  }
-
   if (step === STEPS.DESCRIPTION) {
     bodyContent = (
       <div className="flex flex-col gap-8">
@@ -274,7 +256,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Airbnb your home!"
+      title="PerformanceHouse your home!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
